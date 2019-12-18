@@ -1,0 +1,42 @@
+  .scrollMain{
+    height:900px;
+  }
+  
+  .scriptGenerator{
+    display: flex;
+    flex-direction: row;
+    align-items: none;
+    justify-content: center;
+    margin-top: 20px; 
+  }
+  
+  .example-2 .btn-tertiary{margin-right:15px; color:'black'; padding:0;line-height:40px;width:150px;display: block; border:1px solid rgb(146, 145, 145); border-radius: 5px; font-size: 15px;}
+  .example-2 .btn-tertiary:hover,.example-2 .btn-tertiary:focus{color:rgb(146, 145, 145);border-color:rgb(146, 145, 145)}
+  .example-2 .input-file{width:.1px;height:.1px;opacity:0;overflow:hidden;position:absolute;z-index:-1}
+  .example-2 .input-file + .js-labelFile{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;padding:0 10px;cursor:pointer}
+  .example-2 .input-file + .js-labelFile .icon:before{content:"\f093"}
+  .example-2 .input-file + .js-labelFile.has-file .icon:before{content:"\f00c";color:#5AAC7B}
+  
+  .activeBtn{margin-left:15px; color:'black'; padding:0;line-height:40px;width:173px;border:1px solid rgb(146, 145, 145); border-radius: 5px; cursor:pointer; font-size: 15px}
+  .activeBtn:hover,.activeBtn:focus{color:#888;border-color:#888}
+
+  .scriptItem{
+    line-height:40px;
+    margin-left: -365px;
+    margin-top: 25px;
+  }
+  
+  .scriptItem div{
+    margin-top: 25px;
+  }
+
+  .urna{
+    display:inline-block;
+    width:15px;
+    height:15px;
+  }
+  
+  .urna:hover{
+    color:orange;
+  }
+  
