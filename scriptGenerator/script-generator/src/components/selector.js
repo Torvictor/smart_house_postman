@@ -16,7 +16,7 @@ export default class SelectComponent extends Component {
           currentSelectedValue: ""
         };
 
-        this.API_URL ='http://83.217.12.41:5000/api/demo/';
+        this.API_URL ='http://93.217.12.41:5000/api/demo/';
         this.preface = preface;
         this.infoAPI = infoAPI;
         this.options = props.optionsData;
