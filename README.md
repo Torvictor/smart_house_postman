@@ -6,4 +6,4 @@ cd script-generator
 npm i
 npm start
 
-Welcome, test your API.
+Open your browser and test your API.
