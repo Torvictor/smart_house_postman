@@ -1,0 +1,33 @@
+{
+  "devices": [
+    {
+      "name": "dev_ivan_rgb",
+      "type": "RGBLightHex",
+      "rooms": [
+        "room1"
+      ],
+      "sources": [
+        {
+          "endpoint": "mqtt_ivan_rgb",
+          "endpoint_parameter": "red",
+          "device_parameter": "red"
+        },
+        {
+          "endpoint": "mqtt_ivan_rgb",
+          "endpoint_parameter": "green",
+          "device_parameter": "green"
+        },
+        {
+          "endpoint": "mqtt_ivan_rgb",
+          "endpoint_parameter": "blue",
+          "device_parameter": "blue"
+        }
+      ],
+	  "interface": {
+		"export": true,
+		"read_acl": 100,
+		"write_acl": 999
+		}
+    }
+  ]
+}

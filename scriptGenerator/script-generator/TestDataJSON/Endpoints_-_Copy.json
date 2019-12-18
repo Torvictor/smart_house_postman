@@ -1,0 +1,14 @@
+{
+  "endpoints": [
+    {
+      "driver_uuid": "4db6ae90-f390-45f9-8b4a-9176863ffb5a",
+	  "driver_type": "mqtt",
+      "name": "mqtt_sensor_hws",
+      "params": {
+        "type": "point_value",
+        "topic_read": "/devices/wb-w1/controls/28-01183062d0ff",
+        "topic_write": null
+      }
+    }
+  ]
+}
