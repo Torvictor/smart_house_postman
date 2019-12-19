@@ -175,6 +175,7 @@ export default class ScriptGenerator extends Component {
     console.log("data = " + data)
 
   }).catch(function(error) {
+      alert("Error in the current request:\n" + error)
       console.log(error);
       return false;
   });
