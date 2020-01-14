@@ -1,7 +1,8 @@
 let selectorOptions = [];
 export default selectorOptions = [
-    { label: "None", value: "" },
-    { label: "Endpoints", value: 1 },
-    { label: "Devices", value: 2 },
-    { label: "Rooms", value: 3 }
+    { label: "Отсутствует", value: "" },
+    { label: "Эндпоинты", value: 1 },
+    { label: "Устройства", value: 2 },
+    { label: "Комнаты", value: 3 },
+    { label: "Сценарии", value: 4 }
 ];

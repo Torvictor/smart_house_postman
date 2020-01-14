@@ -39,16 +39,19 @@ export default class SelectComponent extends Component {
   
     switch (label) {
       case this.options[0].label://None
-        this.setAPIValues('None', 'None', 'None', 'None');
+        this.setAPIValues('Отсутствует', 'None', 'None', 'None');
         break;
       case this.options[1].label://PUT endpoints
-        this.setAPIValues('Endpoints', this.API_URL, "endpoints", 'put');
+        this.setAPIValues('Эндпоинты', this.API_URL, "endpoints", 'put');
         break;
       case this.options[2].label://PUT devices
-        this.setAPIValues('Devices', this.API_URL, "devices", 'put');
+        this.setAPIValues('Устройства', this.API_URL, "devices", 'put');
         break;
       case this.options[3].label://PUT rooms
-        this.setAPIValues('Rooms', this.API_URL, "rooms", 'put');
+        this.setAPIValues('Комнаты', this.API_URL, "rooms", 'put');
+        break;
+      case this.options[4].label://PUT scenarios
+        this.setAPIValues('Сценарии', this.API_URL, "scenarios", 'put');
         break;
       default://None
         this.setAPIValues('None', 'None', 'None', 'None');
@@ -61,7 +64,7 @@ export default class SelectComponent extends Component {
     <div className="selectContainer">
       <FormControl>
         <InputLabel shrink id="demo-simple-select-placeholder-label-label">
-          <Helper mainHeader="API Documentation" preface={this.preface} info={this.infoAPI}/>
+          <Helper mainHeader="API документация" preface={this.preface} info={this.infoAPI}/>
         </InputLabel>
         <Select
           labelId="demo-simple-select-placeholder-label-label"

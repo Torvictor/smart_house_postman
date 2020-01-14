@@ -11,7 +11,7 @@ function App() {
     <div className="App">
         <div className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h2 className="hsg">Smart House Postman</h2>
+          <h2 className="hsg">Почтальон умного дома</h2>
         </div>
         <div className="App-intro">
           <ScriptGenerator/>

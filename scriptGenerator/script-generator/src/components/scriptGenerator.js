@@ -175,7 +175,7 @@ export default class ScriptGenerator extends Component {
     console.log("data = " + data)
 
   }).catch(function(error) {
-      alert("Error in the current request:\n" + error)
+      alert("Ошибка в текущем запросе:\n" + error)
       console.log(error);
       return false;
   });
@@ -183,9 +183,9 @@ export default class ScriptGenerator extends Component {
   }
 
   isValidSelector(){
-    if(this.state.postName === 'None' || this.state.postName ===""
+    if(this.state.postName === 'Отсутствует' || this.state.postName ===""
       || this.state.postName === null || this.state.postName === undefined){
-        alert("Choose a post (not 'None') that you need.");
+        alert("Выберите нужный запрос (кроме 'Отсутствует').");
         return false;
       }
     return true;
@@ -193,7 +193,7 @@ export default class ScriptGenerator extends Component {
 
   addPost() {
     if(this.state.accessToActivate === false){
-      console.log("Unimpossible activate a script without a script's JSON file.")
+      console.log("Невозможно активировать скрипт без JSON файла.")
       return;
     }
     if(this.isValidSelector() === false){
@@ -216,7 +216,7 @@ export default class ScriptGenerator extends Component {
   }
 
   showPostWithJSON(val){
-    alert("JSON of the " + val.target.API_method + " post №" + val.target.dataset.id + " is:\n" + val.target.dataset.json);
+    alert("JSON файлом " + val.target.API_method + " запроса №" + val.target.dataset.id + " является:\n" + val.target.dataset.json);
     console.log("JSON showed:\n" + val.target.dataset.json);
     //document.write(JSON.stringify(val.target.dataset.json));
   }
@@ -245,7 +245,7 @@ export default class ScriptGenerator extends Component {
           setStateActivateB={this.setStateActivateB}/>
 
         <div className="listOfScripts">
-          <button className="activeBtn" style={{backgroundColor: this.state.activateB}} onClick={this.addPost}>Activate</button>
+          <button className="activeBtn" style={{backgroundColor: this.state.activateB}} onClick={this.addPost}>Отправить файл</button>
           <br /><br />
           
           <Paper className="scriptItem">
@@ -253,11 +253,11 @@ export default class ScriptGenerator extends Component {
               <Table>
                 <TableHead>
                   <TableRow>
-                  <StyledTableCell>Number</StyledTableCell>
+                  <StyledTableCell>Номер</StyledTableCell>
                   <StyledTableCell align="right">UUID</StyledTableCell>
-                  <StyledTableCell align="right">Name</StyledTableCell>
-                  <StyledTableCell align="right">Type</StyledTableCell>
-                  <StyledTableCell align="right">Drop</StyledTableCell>
+                  <StyledTableCell align="right">Название</StyledTableCell>
+                  <StyledTableCell align="right">Тип</StyledTableCell>
+                  <StyledTableCell align="right">Удалить</StyledTableCell>
                   </TableRow>
               </TableHead>
               

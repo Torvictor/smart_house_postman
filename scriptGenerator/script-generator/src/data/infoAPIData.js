@@ -1,7 +1,7 @@
 let infoAPI = [];
 export default infoAPI = [
-    { header: "Get endpoints", method: "get", extra: "Активируется при переключении селектора на 'Endpoints'.", text: "Вывод всех активных endpoint-ов с сервера.", example: "any"},
-    { header: "Make endpoints", method: "put", extra: "Активируется при клике на activate после загрузки JSON.\nДопускается ввести несколько endpoint-ов.", text: "Добавление endpoint.", example: `{
+    { header: "Получить эндпоинты", method: "get", extra: "Активируется при переключении селектора на 'Эндпоинты'.", text: "Вывод всех активных эндпоинтовов с сервера.", example: "-"},
+    { header: "Добавить эндпоинты", method: "put", extra: "Активируется при клике на 'Активировать' после загрузки JSON.\nДопускается ввести несколько эндпоинтовов.", text: "Добавление эндпоинта.", example: `{
         "endpoints": [
           {
             "driver_uuid": "4db6ae90-f390-45f9-8b4a-9176863ffb5a",
@@ -16,14 +16,14 @@ export default infoAPI = [
         ]
       }
       `},
-    { header: "Remove endpoints", method: "delete", extra: "Активируется при клике на урну по uuid, полученного с сервера.", 
-    text: "Удаление endpoint по uuid",
+    { header: "Удалить эндпоинты", method: "delete", extra: "Активируется при клике на урну по uuid, полученного с сервера.", 
+    text: "Удаление эндпоинта по uuid",
     example: `{
         "endpoints": ["9041bc26-3360-4d5b-a186-93eca865470a"]
               }`},
       
-    { header: "Get devices", method: "get", extra: "Активируется при переключении селектора на 'Devices'.", text: "Вывод всех активных endpoint-ов с сервера.", example: "any"},
-    { header: "Make devices", method: "put", extra: "Активируется при клике на activate после загрузки JSON.\nДопускается ввести несколько устройств.", text: "Добавление устройства.", example: 
+    { header: "Получить устройства", method: "get", extra: "Активируется при переключении селектора на 'Устройства'.", text: "Вывод всех активных устройств с сервера.", example: "-"},
+    { header: "Добавить устройства", method: "put", extra: "Активируется при клике на 'Активировать' после загрузки JSON.\nДопускается ввести несколько устройств.", text: "Добавление устройства.", example: 
     `{
       "devices": [
         {
@@ -88,14 +88,14 @@ export default infoAPI = [
       ]
     }
     `},
-    { header: "Remove devices", method: "delete", extra: "Активируется при клике на урну по uuid, полученного с сервера.", 
-    text: "Удаление endpoint по uuid",
+    { header: "Удалить устройства", method: "delete", extra: "Активируется при клике на урну по uuid, полученного с сервера.", 
+    text: "Удаление устройства по uuid",
     example: `{
             "devices": ["d4cb7844-ac94-4f5d-8f96-526e12dab38c"]
               }`},
     
-    { header: "Get rooms", method: "get", extra: "Активируется при переключении селектора на 'Rooms'.", text: "Вывод всех активных комнат с сервера.", example: "any"},
-    { header: "Make rooms", method: "put", extra: "Активируется при клике на activate после загрузки JSON.\nДопускается ввести несколько комнат.", text: "Добавление комнаты.", example: 
+    { header: "Получить комнаты", method: "get", extra: "Активируется при переключении селектора на 'Комнаты'.", text: "Вывод всех активных комнат с сервера.", example: "-"},
+    { header: "Добавить комнаты", method: "put", extra: "Активируется при клике на 'Активировать' после загрузки JSON.\nДопускается ввести несколько комнат.", text: "Добавление комнаты.", example: 
     `{
       "rooms": [
         "room1",
@@ -104,10 +104,14 @@ export default infoAPI = [
       ]
     }
     `},
-    { header: "Remove rooms", method: "delete", extra: "Активируется при клике на урну по uuid, полученного с сервера.", 
+    { header: "Удалить комнаты", method: "delete", extra: "Активируется при клике на урну по uuid, полученного с сервера.", 
     text: "Удаление комнаты по uuid",
     example: `{
           "rooms": ["9041bc26-3360-4d5b-a186-93eca865470a", 
           "a93da9a8-84ff-4ae4-b3df-3bb2d082d81d"]
               }`},
+
+    { header: "Получить/добавить/удалить сценарии", method: "get/put/delete", extra: "Уже работает", 
+      text: "Документации пока нет...",
+      example: ``}
 ];

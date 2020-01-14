@@ -53,7 +53,6 @@ export default class UploadFileForm extends Component {
     getJSONscript(res){
         console.log(res);
         this.props.setStateCurrentJsonString(res);
-        console.log("KKKKKKKKKK")
         this.props.setStateActivateB("white");
     }
 
@@ -64,7 +63,7 @@ export default class UploadFileForm extends Component {
                     <input type="file" name="file" id="file" className="input-file" onChange={this.handleFiles.bind(this)} onClick={this.cleanInputForTheSameFile.bind(this)}ref={this.file}/>
                         <label htmlFor="file" className="btn btn-tertiary js-labelFile">
                             <i className="icon fa fa-check"></i>
-                            <span className="js-fileName">&nbsp;Upload file</span>
+                            <span className="js-fileName">&nbsp;Загрузить файл</span>
                         </label>
                 </div>
             </div>
