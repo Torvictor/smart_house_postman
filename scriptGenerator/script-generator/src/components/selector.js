@@ -54,7 +54,7 @@ export default class SelectComponent extends Component {
         this.setAPIValues('Сценарии', this.API_URL, "scenarios", 'put');
         break;
       default://None
-        this.setAPIValues('None', 'None', 'None', 'None');
+        this.setAPIValues('Отсутствует', 'None', 'None', 'None');
         console.log("Set default value 'None' in selector.");
     }
   };
